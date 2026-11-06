@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import client from '../api/client'
 import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 import ProductCard from '../components/ProductCard'
 
 export default function Home() {
@@ -13,21 +14,9 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      <Hero />
 
-      {/* Hero */}
-      <section
-        className="bg-cover bg-center py-24 px-8"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
-      >
-        <h1 className="text-5xl font-bold text-nimbus-cocoa max-w-lg">
-          Small-batch ice cream, made for slow afternoons.
-        </h1>
-        <p className="text-nimbus-cocoa/80 mt-4 max-w-md">
-          Three flavors. Zero shortcuts.
-        </p>
-      </section>
-
-      {/* Product showcase */}
+      {/* Product showcase - unchanged from before */}
       <section className="py-16 px-8 bg-nimbus-cream">
         <h2 className="text-3xl font-bold text-center text-nimbus-cocoa mb-10">
           Our Flavors
@@ -39,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand story strip */}
+      {/* Brand story - unchanged */}
       <section className="py-16 px-8 text-center bg-white">
         <h2 className="text-2xl font-semibold text-nimbus-cocoa mb-4">
           Why Nimbus?
