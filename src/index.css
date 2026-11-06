@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nimbus-blue: #A8D8EA;
+  --color-nimbus-cream: #FFF8F0;
+  --color-nimbus-gold: #D4A574;
+  --color-nimbus-cocoa: #4A2C2A;
+}
